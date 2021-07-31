@@ -14,7 +14,7 @@ module.exports = {
                 console.log(response);
                 const embed = new Discord.MessageEmbed()
                 .setColor('#4E5D94')
-                .setTitle('Mc server status')
+                .setTitle("Minecraft's server status")
                 .addFields(
                     {name: 'Server IP', value: response.host},
                     {name: 'Online Players', value: response.onlinePlayers},
