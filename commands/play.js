@@ -1,15 +1,14 @@
 const ytdl = require('ytdl-core');
 const ytSearch = require('yt-search');
-const util = require('minecraft-server-util');
 
 const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop', 'mcsv', 'youtube'],
+    aliases: ['skip', 'stop'],
     cooldown: 0,
     description: 'Advanced music bot',
-    async execute(message, args, cmd, client, Discord){
+    async execute(message,args, cmd, client, Discord){
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('You must already in a channel to use this command!');
 

@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+client.login('ODcwODQzMDcwMjYwODY3MTI1.YQSpzw.0NlsAuhtVwmgxS4avHRzaIISm5M');
 
 const prefix = '^';
 
@@ -29,7 +30,6 @@ client.on('message', message => {
     if(command) command.execute(message, args, cmd, client, Discord);
 })
 
-client.login(process.env.token);
 
 
 
