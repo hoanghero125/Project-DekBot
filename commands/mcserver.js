@@ -5,7 +5,7 @@ module.exports = {
     aliases: ['youtube'],
     cooldown: 0,
     description: 'Advanced music bot',
-    async execute(message,args, cmd, client, Discord){
+    async execute(message, args, cmd, client, Discord){
         if(cmd === 'mcsv'){
             if(!args[0]) return message.channel.send("Please enter a Minecraft's server ip");
             if(!args[1]) return message.channel.send("Please enter a Minecraft's server port");
