@@ -1,2 +1,2 @@
 # **Project-_DekBot_**
-A _**Discord**_ bot by _**Dek**_
+A _**Discord**_ bot by _**Dekuran**_
