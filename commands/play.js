@@ -1,11 +1,12 @@
 const ytdl = require('ytdl-core');
 const ytSearch = require('yt-search');
+const util = require('minecraft-server-util');
 
 const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop'],
+    aliases: ['skip', 'stop', 'mcsv', 'youtube'],
     cooldown: 0,
     description: 'Advanced music bot',
     async execute(message, args, cmd, client, Discord){
