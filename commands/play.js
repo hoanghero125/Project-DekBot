@@ -6,7 +6,7 @@ const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop', 'mcsv', 'youtube'],
+    aliases: ['skip', 'stop'],
     cooldown: 0,
     description: 'Advanced music bot',
     async execute(message, args, cmd, client, Discord){
