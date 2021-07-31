@@ -8,8 +8,7 @@ module.exports = {
     aliases: ['skip', 'stop'],
     cooldown: 0,
     description: 'Advanced music bot',
-    async execute(message,args, cmd, client, Discord){
-
+    async execute(message, args, cmd, client, Discord){
         const voice_channel = message.member.voice.channel;
         if (!voice_channel) return message.channel.send('You must already in a channel to use this command!');
 
@@ -64,8 +63,8 @@ module.exports = {
 
         else if(cmd === 'skip') skip_song(message, server_queue);
         else if(cmd === 'stop') stop_song(message, server_queue);
+        
     }
-    
 }
 
 const video_player = async (guild, song) => {
