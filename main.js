@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-client.login('ODcwODQzMDcwMjYwODY3MTI1.YQSpzw.0NlsAuhtVwmgxS4avHRzaIISm5M');
-
 const prefix = '^';
 
 const fs = require('fs');
@@ -29,6 +27,10 @@ client.on('message', message => {
     const command = client.commands.get(cmd) || client.commands.find(a => a.aliases && a.aliases.includes(cmd));
     if(command) command.execute(message, args, cmd, client, Discord);
 })
+
+client.login(process.env.token);
+
+
 
 
 
