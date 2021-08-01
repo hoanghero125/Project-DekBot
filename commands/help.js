@@ -2,7 +2,7 @@ module.exports = {
     name: 'help',
     cooldown: 0,
     description: 'Advanced music bot',
-    async execute(message,args, cmd, client, Discord){
+    async execute(message, args, cmd, client, Discord){
         if(cmd === 'help'){
             const helpList = new Discord.MessageEmbed()
                 .setColor('#4E5D94')

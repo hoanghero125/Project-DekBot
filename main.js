@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
+
 const prefix = '^';
 
 const fs = require('fs');
@@ -29,9 +30,3 @@ client.on('message', message => {
 })
 
 client.login(process.env.token);
-
-
-
-
-
-
