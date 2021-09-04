@@ -5,7 +5,7 @@ const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop'],
+    aliases: ['skip', 'stop', 'p', 's'],
     cooldown: 0,
     description: 'Advanced music bot',
     async execute(message, args, cmd, client, Discord){
@@ -14,7 +14,7 @@ module.exports = {
 
         const server_queue = queue.get(message.guild.id);
 
-        if (cmd === 'play'){
+        if (cmd === 'play' || cmd === 'p'){
             if (!args.length) return message.channel.send('You need to send the second argument!');
             let song = {};
             if (ytdl.validateURL(args[0])) {
@@ -61,7 +61,7 @@ module.exports = {
             }
         }
 
-        else if(cmd === 'skip') skip_song(message, server_queue);
+        else if(cmd === 'skip' || cmd === 's') skip_song(message, server_queue);
         else if(cmd === 'stop') stop_song(message, server_queue);
         
     }
