@@ -12,6 +12,7 @@ module.exports = {
                     {name: 'Skip music', value: '^skip (^s)'},
                     {name: 'Stop music', value: '^stop'},
                     {name: "Minecraft's server status", value: "^mcsv [server's ip] [port]"},
+                    {name: "covid", value: '^covid [covid-19 info]'},
                     {name: "Show creator's Youtube channel", value: '^youtube'},
                 )
                 .setFooter("DekBot - Created by Dek");
